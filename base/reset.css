@@ -1,0 +1,70 @@
+/* Tags fantasmas com pseudoelementos*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    /*padding: 0;*/
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    line-height: var(--line-height-normal);
+    -webkit-font-smoothing: antialiased; /* Foca em animação*/
+    -moz-osx-font-smoothing: grayscale; /*Suavizar a fonte*/
+    text-rendering: optimizeLegibility;/*redenrizar o texto*/
+    font-synthesis: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select{
+    font: inherit; /* Fonte do filho herda fonte de pai*/
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    overflow-wrap: break-word; /* hifenização de palavras*/
+}
+
+#root,
+#__next{
+    isolation: isolate; /*Equivale a Empilhamento ou z-index*/
+}
+
+ul[role='list'],
+ol[role='list']{
+    list-style: none;
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+}
