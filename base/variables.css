@@ -64,7 +64,7 @@
        =============================================== */
     
     /* Backgrounds */
-    --color-background: var(--color-white);
+    --color-background: var(--color-black);
     --color-background-secondary: var(--color-gray-50);
     --color-surface: var(--color-white);
     --color-surface-elevated: var(--color-white);
